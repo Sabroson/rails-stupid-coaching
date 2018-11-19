@@ -7,6 +7,8 @@ class QuestionsController < ApplicationController
     @answer = coach
   end
 
+  private
+
   def coach
     if @question[@question.length - 1] == '?'
       'Silly question, get dressed and go to work!'
